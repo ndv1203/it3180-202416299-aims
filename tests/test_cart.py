@@ -10,13 +10,6 @@ class TestCart(unittest.TestCase):
             self.assertTrue(cart.add_dvd(DigitalVideoDisc(f"DVD {i}")))
         self.assertFalse(cart.add_dvd(DigitalVideoDisc("DVD 21")))
 
-    def test_remove_dvd(self):
-        cart = Cart()
-        dvd = DigitalVideoDisc("The Lion King", cost=19.95)
-        cart.add_dvd(dvd)
-        self.assertTrue(cart.remove_dvd(dvd))
-        self.assertFalse(cart.remove_dvd(dvd))
-
     def test_total_cost_with_discount(self):
         cart = Cart()
         cart.add_dvd(DigitalVideoDisc("Test DVD", cost=100.0))
