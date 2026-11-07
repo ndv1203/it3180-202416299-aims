@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Cart.sort_by_title()` và `Cart.sort_by_cost()` sắp xếp giỏ hàng (#14).
 - `search_by_category()` tìm kiếm đĩa DVD theo thể loại (#15, #16).
 
+## [1.0.1] - 2026-11-07
+### Fixed
+- Sửa `search_by_title()` không phân biệt hoa thường (#20).
+
 ## [1.0.0] - 2026-11-07
 ### Added
 - `Cart.print_cart()` hiển thị chi tiết các đĩa DVD trong giỏ hàng (#3).
