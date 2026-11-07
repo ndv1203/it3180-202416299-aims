@@ -1,6 +1,7 @@
 import unittest
 from aims.cart import Cart
 from aims.dvd import DigitalVideoDisc
+from aims.search import search_by_category
 
 
 class TestCart(unittest.TestCase):
@@ -41,6 +42,13 @@ class TestCart(unittest.TestCase):
         cart.add_dvd(DigitalVideoDisc("Star Wars", cost=24.95))
         cart.sort_by_cost()
         self.assertEqual([d.title for d in cart.items], ["Star Wars", "Aladdin"])
+
+    def test_search_by_category(self):
+        dvd1 = DigitalVideoDisc("The Lion King", "Animation")
+        dvd2 = DigitalVideoDisc("Star Wars", "Science Fiction")
+        results = search_by_category([dvd1, dvd2], "animation")
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0].title, "The Lion King")
 
 
 if __name__ == "__main__":
