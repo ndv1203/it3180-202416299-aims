@@ -6,8 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.1.0] - 2026-11-07
 ### Added
-- `Cart.sort_by_title()` và `Cart.sort_by_cost()` sắp xếp giỏ hàng.
+- `Cart.sort_by_title()` và `Cart.sort_by_cost()` sắp xếp giỏ hàng (#14).
+- `search_by_category()` tìm kiếm đĩa DVD theo thể loại (#15, #16).
 
 ## [1.0.0] - 2026-11-07
 ### Added
