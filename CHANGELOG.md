@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-07
+### Fixed
+- Sửa `search_by_title()` không phân biệt hoa thường (#20).
+
 ## [1.0.0] - 2026-11-07
 ### Added
 - `Cart.print_cart()` hiển thị chi tiết các đĩa DVD trong giỏ hàng (#3).
